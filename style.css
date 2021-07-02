@@ -1,0 +1,110 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.city-searcher{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: rgb(66, 201, 255);
+    box-sizing: border-box;
+}
+
+input[type="search"]{
+    font-size: 18px;
+    outline:none;
+    margin-right: 10px;
+    border: none;
+    height: 32px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#search-btn{
+    font-size: 18px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+    color: #221e23;
+    background-color: #fff;
+    transition: color linear .5s;
+    transition: background-color linear .5s;
+}
+
+#search-btn:hover{
+    color: #fff;
+    background-color: #221e23;
+}
+
+#city{
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 20px 30px 20px ;
+    background-color: rgb(228 228 255);
+}
+
+.city-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.city-name h2{
+    font-size: 24px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.city-name img{
+    cursor: pointer;
+    width: 30px;
+}
+
+.city-name img{
+    
+}
+
+.city-weather{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #221e23;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.weather-icon{
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.city-temperature{
+    font-size: 28px;
+    margin-right: 10px;
+}
