@@ -10,10 +10,8 @@ h1{
 .city-searcher{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     width: fit-content;
+    margin: 0 auto;
     filter: drop-shadow(2px 4px 6px black);
     border-radius: 30px;
     overflow: hidden;
@@ -21,31 +19,40 @@ h1{
 
 .search-wrapper{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 30px 20px;
-    background-color: rgb(66, 201, 255);
     box-sizing: border-box;
+    background-color: rgb(66, 201, 255);
 }
 
 input[type="search"]{
     font-size: 18px;
-    outline:none;
-    margin-right: 10px;
-    border: none;
     height: 32px;
+    border: none;
     border-radius: 10px;
     padding: 0 10px;
+    margin-right: 10px;
+    outline:none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    content: "";
+	width: 16px;
+	height: 16px;  
+    background-image: url("img/search-close-btn.png");
+    background-size: contain;
+	margin-right: 2px;
+	cursor: pointer;
 }
 
 #search-btn{
     font-size: 18px;
     height: 32px;
-    cursor: pointer;
     border: none;
     border-radius: 9px;
+    cursor: pointer;
     color: #221e23;
     background-color: #fff;
     transition: color linear .5s;
@@ -57,28 +64,23 @@ input[type="search"]{
     background-color: #221e23;
 }
 
-#city{
+.city{
     display: none;
     flex-direction: column;
     box-sizing: border-box;
-    width: 100%;
     padding: 0px 20px 30px 20px ;
     background-color: rgb(228 228 255);
+    transition: visibility ease-in-out .5s;
 }
 
 .city-name{
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    font-weight: 700;
     margin: 20px 0;
 }
 
 .city-name h2{
-    font-size: 24px;
-    margin: 0;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
 
 .city-name img{
@@ -87,13 +89,13 @@ input[type="search"]{
 }
 
 .city-weather{
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #221e23;
     padding: 10px 20px;
     border-radius: 15px;
+    background-color: #221e23;
+    color: #fff;
 }
 
 .weather-icon{
@@ -103,7 +105,6 @@ input[type="search"]{
 
 .city-temperature{
     font-size: 28px;
-    margin-right: 10px;
 }
 
 @media screen and (max-width: 400px){
