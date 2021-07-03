@@ -1,5 +1,5 @@
 let city = {
-  API_KEY: "1fca7ff8624bb37869adf474ba35f48c",
+  API_KEY: "ff9d437b8a5c1fdf6bc59832839e29b8",
   toggleFavorite() {
     if ((localStorage.getItem("userCity") !== null) && favorite.src.includes("not-filled")) {
       favorite.src = "img/black-heart.svg";
