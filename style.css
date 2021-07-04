@@ -70,6 +70,7 @@ input[type="search"]::-webkit-search-cancel-button {
     box-sizing: border-box;
     padding: 0px 20px 30px 20px ;
     background-color: rgb(228 228 255);
+    transition: visibility ease-in-out .5s;
 }
 
 .city-name{
@@ -104,6 +105,14 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .city-temperature{
     font-size: 28px;
+}
+
+.error{
+    display: none;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(129, 0, 0);
 }
 
 @media screen and (max-width: 400px){
